@@ -3,6 +3,7 @@ This module was made to handle the curses sections for the ap selection,
 template selection and the main window
 """
 import os
+import curses
 
 class UiTemplate(object):
 
