@@ -1,13 +1,21 @@
 This file describes what the dot can do.
 
-command       Description                   options
---------------------------------------------------
-..        ->  goes back to mainframe        none
+command       Description                           options
+---------------------------------------------------------------
+..        ->  goes back to mainframe                none
 
-exit      ->  exits the dot program         none
+exit      ->  exits the dot program                 none
 
-help      ->  Lists all available options   none
+clear     ->  Clears the screen                     none
 
-connect   ->  connect to server using ssh   -u <username>
-                                            -p <password>
-                                            -h <server_ip>
+help      ->  Lists all available options           none
+
+connect   ->  connect to server using ssh,          -u <username>
+              if no options it connects to          -p <password>
+              default settings                      -h <server_ip>
+
+yt        ->  Download a youtube link               -l <link>
+
+isdark    ->  Say in ascii if it is dark outside    none
+
+hangman   ->  Play Hangman, just type a letter      none

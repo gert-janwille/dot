@@ -23,7 +23,7 @@ CLASSIFIERS = ["Development Status :: 1 - Planning",
                "Intended Audience :: Information Technology"]
 ENTRY_POINTS = {"console_scripts": ["dot = dot.pydot:run"]}
 
-INSTALL_REQUIRES = ["pexpect"]
+INSTALL_REQUIRES = ["pexpect", "future", "youtube_dl"]
 
 # run setup
 setup(name=NAME, author=AUTHOR, description=DESCRIPTION,

@@ -26,7 +26,7 @@ class DotEngine:
         self.op_mode = 0x0
 
     def start(self):
-        print '[' + R + '+' + W + '] Engine Started'
+        print '[' + G + '+' + W + '] Engine Started'
 
         # Parse args
         global args, task
