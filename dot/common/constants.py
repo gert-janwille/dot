@@ -4,6 +4,7 @@
 import os
 
 VERSION = "0.0.1"
+INTERFACE='Wi-Fi'
 
 # Console colors
 W = '\033[0m'    # white (normal)

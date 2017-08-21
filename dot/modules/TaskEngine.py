@@ -5,6 +5,7 @@ import os
 import sys
 import time
 import shutil
+import webbrowser
 import youtube_dl
 from pexpect import pxssh
 from dot.common.constants import *
@@ -26,7 +27,9 @@ class TaskEngine:
             'connect': self.connect,
             'yt': self.youtubeDownload,
             'isdark': self.darkOutside,
-            'hangman': self.hangman
+            'hangman': self.hangman,
+            'secure': self.secureNetwork,
+            'flush': self.flush
         }
 
         #if command exists, split the string and checks the first command
@@ -40,9 +43,11 @@ class TaskEngine:
                 break
             else:
                 count += 1
-                if count == maxlen: print '[' + R + '!' + W + '] Command: %s is not found.' % (task)
-
-
+                if count == maxlen:
+                    try:
+                     os.system(task)
+                    except:
+                        print '[' + R + '!' + W + '] Command: %s is not found.' % (task)
 
 
     def help(self, args):
@@ -51,7 +56,7 @@ class TaskEngine:
 
     def stop(self, args):
         print '[' + R + '!' + W + '] Closing'
-        print R + '\n' + O + '  • Bye see you later :)\n' + W
+        print R + '\n' + O + '  • Bye! See you later :)\n' + W
         sys.exit(0)
 
     def clear(self, args):
@@ -64,6 +69,49 @@ class TaskEngine:
 
     def hangman(self, args):
         game = Hangman.Hangman()
+
+    def countdown(self, n) :
+        while n > 0:
+            print '%s...'%(n)
+            time.sleep(1)
+            n = n - 1
+            if n ==0:
+                return 0
+
+    def flush(self, args):
+        print '[' + T + '*' + W + '] Closing secure connection...'
+
+        #unset proxy
+        os.system('sudo networksetup -setsocksfirewallproxystate ' + INTERFACE + ' off')
+        print '[' + R + '+' + W + '] Secure connection closed'
+
+    def secureNetwork(self, args):
+        self.clear([])
+
+        print '[' + T + '*' + W + '] Starting secure connection'
+
+        try:
+            #ask and keep on password
+            os.system('sudo -v')
+            os.system('while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &')
+
+            #relay interface through tor
+            os.system('sudo networksetup -setsocksfirewallproxy ' + INTERFACE + ' 127.0.0.1 9050 off')
+            os.system('sudo networksetup -setsocksfirewallproxystate ' + INTERFACE + ' on')
+
+            print '\n[' + G + '+' + W + '] SOCKS proxy 127.0.0.1:9050 enabled'
+            print '[' + G + '+' + W + '] Starting Tor engine... \n'
+
+            #now runs tor in background
+            os.system('tor &>/dev/null &')
+
+            #countdown to secure connection
+            self.countdown(3)
+            print '[' + T + '*' + W + '] Close connection using ‘flush’'
+            print '[' + G + '+' + W + '] Secure connetion established!\n You can browse anonymously.\n Want to be sure? Check: https://check.torproject.org/'
+
+        except KeyboardInterrupt:
+            print 'test interupted'
 
     def youtubeDownload(self, args):
         try:

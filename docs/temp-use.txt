@@ -14,6 +14,13 @@ connect   ->  connect to server using ssh,          -u <username>
               if no options it connects to          -p <password>
               default settings                      -h <server_ip>
 
+secure    ->  Relay all internet traffic over       none
+              secure tor connection.
+              check: https://check.torproject.org/
+
+flush     ->  Close secure connection and set to    none
+              default settings
+
 yt        ->  Download a youtube link               -l <link>
 
 isdark    ->  Say in ascii if it is dark outside    none

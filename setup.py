@@ -4,6 +4,26 @@ This module tries to install all the required software.
 """
 import os
 from setuptools import setup, find_packages
+import dot.common.constants as constants
+
+def get_tor():
+    if not os.path.dirname("/opt/local/etc/tor"):
+        install = raw_input(("[" + constants.T + "*" + constants.W + "] tor not found in " +
+                             "/opt/local/etc/tor, install now? [y/n] "))
+        if install == "y":
+            if os.path.dirname("/usr/local/Homebrew"):
+                try:
+                    os.system("brew install tor")
+                except:
+                    print '[' + G + '+' + W + '] Please download Homebrew: \n https://brew.sh/'
+            else:
+                os.system("apt-get -y install tor")
+        else:
+            sys.exit(("[" + constants.R + "-" + constants.W + "] tor " +
+                      "/opt/local/etc/tor"))
+
+
+
 
 NAME = "Dot"
 AUTHOR = "gert-janwille"
@@ -31,6 +51,8 @@ setup(name=NAME, author=AUTHOR, description=DESCRIPTION,
       include_package_data=INCLUDE_PACKAGE_DATA, version=VERSION, entry_points=ENTRY_POINTS,
       install_requires=INSTALL_REQUIRES, classifiers=CLASSIFIERS, url=URL)
 
+# Get tor
+get_tor()
 
 print("                    |_   _ `.  .'   `. |  _   _  |              ")
 print("                      | | `. \/  .-.  \|_/ | | \_|            ")
