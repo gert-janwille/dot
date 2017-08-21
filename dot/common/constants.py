@@ -55,3 +55,24 @@ LIGHT_HOUR = {
     11: 7,
     12: 8
 }
+
+DATA = [
+    {'cmd':'..', 'desc':'goes back to mainframe', 'opt':'none'},
+    {'cmd':'exit', 'desc':'exits the dot program', 'opt':'none'},
+    {'cmd':'clear', 'desc':'Clears the screen', 'opt':'none'},
+    {'cmd':'help', 'desc':'Lists all available options', 'opt':'none'},
+
+    {'cmd':'\nconnect', 'desc':'connect to server using ssh,', 'opt':' -u <username>'},
+    {'cmd':'', 'desc':'if no options it connects to', 'opt':'-p <password>'},
+    {'cmd':'', 'desc':'default settings', 'opt':'-h <server_ip>'},
+
+    {'cmd':'\nsecure', 'desc':'Relay all internet traffic over', 'opt':'none'},
+    {'cmd':'', 'desc':'check: https://check.torproject.org/', 'opt':''},
+
+    {'cmd':'\nflush', 'desc':'Close secure connection and set to', 'opt':'none'},
+    {'cmd':'', 'desc':'default settings', 'opt':''},
+
+    {'cmd':'\nyt', 'desc':'exits the dot program', 'opt':'-l <link>'},
+    {'cmd':'isdark', 'desc':'Say in ascii if it is dark outside', 'opt':'none'},
+    {'cmd':'hangman', 'desc':'Play Hangman, just type a letter', 'opt':'none\n'}
+]
