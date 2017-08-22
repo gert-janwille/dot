@@ -56,6 +56,14 @@ LIGHT_HOUR = {
     12: 8
 }
 
+MSG = [
+    {'cmd':'help', 'desc':'Print out this table', 'opt':'none'},
+    {'cmd':'whoisonline', 'desc':'Returns all online nicknames', 'opt':'none'},
+    {'cmd':'whosonline', 'desc':'Returns all online nicknames', 'opt':'none'},
+    {'cmd':'howmanyonline', 'desc':'Returns a number of members online', 'opt':'none'},
+    {'cmd':'quit', 'desc':'Close the secure chat', 'opt':'none'}
+]
+
 DATA = [
     {'cmd':'..', 'desc':'goes back to mainframe', 'opt':'none'},
     {'cmd':'exit', 'desc':'exits the dot program', 'opt':'none'},

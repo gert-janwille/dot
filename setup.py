@@ -24,7 +24,10 @@ def get_tor():
 
 
 def get_pubnub():
-    os.system("pip install pubnub --ignore-installed six")
+    try:
+        os.system("pip install 'pubnub>=3,<4' --ignore-installed six")
+    except:
+        print 'please download pip'
 
 NAME = "Dot"
 AUTHOR = "gert-janwille"
