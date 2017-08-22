@@ -23,7 +23,8 @@ def get_tor():
                       "/opt/local/etc/tor"))
 
 
-
+def get_pubnub():
+    os.system("pip install pubnub --ignore-installed six")
 
 NAME = "Dot"
 AUTHOR = "gert-janwille"
@@ -53,6 +54,7 @@ setup(name=NAME, author=AUTHOR, description=DESCRIPTION,
 
 # Get tor
 get_tor()
+get_pubnub()
 
 print("                    |_   _ `.  .'   `. |  _   _  |              ")
 print("                      | | `. \/  .-.  \|_/ | | \_|            ")

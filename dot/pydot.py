@@ -55,5 +55,6 @@ def run():
 
     except KeyboardInterrupt:
         print R + '\n' + O + '  • interrupted by user\n' + W
+
     except EOFError:
         print R + '\n' + O + '  • interrupted by error\n' + W
