@@ -6,12 +6,12 @@
   <p>
     DOT is a multi use tool for developers, hackers, testers and everyone who want to be secure and playing simple terminal games.
   <p>
-  <p>
-  ![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
-  ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-  </p>
 </div>
 
+<center>
+  ![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
+  ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+</center>  
 
 
 
