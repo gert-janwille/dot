@@ -40,7 +40,7 @@ git clone https://github.com/gert-janwille/dot.git # Download the latest revisio
 cd dot # Switch to tool's directory
 sudo python setup.py install # Install any dependencies (Currently pexpect, future, youtube_dl, pubnub, tor)
 ```
-Alternatively, you can download the latest stable version from the [Releases page](d).
+Alternatively, you can download the latest stable version from the [Releases page](https://github.com/gert-janwille/dot/tags).
 
 If you want to make a default ssh connection, add in the Dot/dot folder a new file called `settings.py` and set the values:
 
