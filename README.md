@@ -8,10 +8,9 @@
   <p>
 </div>
 
-<center>
-  ![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
-  ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-</center>  
+
+![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) 
 
 
 
