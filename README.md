@@ -3,16 +3,15 @@
     <img width="250" heigth="250" src="https://raw.github.com/gert-janwille/dot/master/docs/Dot.png">
   </a>
   <br/>
-  <br/>
-  <h1>DOT</h1>
   <p>
     DOT is a multi use tool for developers, hackers, testers and everyone who want to be secure and playing simple terminal games.
   <p>
-  ![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
-  ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-  [![GitHub release](https://img.shields.io/github/release/dot/rubidium.svg)]()
-  [![license](https://img.shields.io/github/license/dot/apistatus.svg)]()
 </div>
+
+![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![GitHub release](https://img.shields.io/github/release/dot/rubidium.svg)]()
+[![license](https://img.shields.io/github/license/dot/apistatus.svg)]()
 
 
 ## Getting Started
@@ -61,7 +60,7 @@ Use `dot -t <TASK>` to start a task immediately
 
 <br/>
 
-#### Main Functions
+### Main Functions
 These are all functions who can be use immediately or using the dot mainframe.
 
 ***
@@ -108,7 +107,7 @@ Use the yt function to download your favorite music from youtube. The song will 
 
 <br/>
 
-#### Games
+### Games
 Dot has a couple of build-in mini-games. They are listed below and makes waiting for code to compile less boring.
 
 ***
@@ -124,7 +123,7 @@ Use the hangman function to play the original and old-fashion game. Guess the wo
 
 <br/>
 
-#### Mainframe Functions
+### Mainframe Functions
 The mainframe functions are little function that only need to be used when you're on DOT's mainframe.
 
 ***
