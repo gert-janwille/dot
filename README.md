@@ -10,8 +10,6 @@
 
 ![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-[![GitHub release](https://img.shields.io/github/release/dot/rubidium.svg)]()
-[![license](https://img.shields.io/github/license/dot/apistatus.svg)]()
 
 
 ## Getting Started
@@ -103,7 +101,7 @@ or `dot -t yt -l <link>`
 
 Use the yt function to download your favorite music from youtube. The song will be downloaded and moved to your downloads folder in a couple of seconds.
 
-***
+
 
 <br/>
 
@@ -158,7 +156,7 @@ DOT > help
 
 Use the help function to see all the available options.
 
-***
+
 
 <br/>
 
