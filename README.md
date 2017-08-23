@@ -6,10 +6,13 @@
   <p>
     DOT is a multi use tool for developers, hackers, testers and everyone who want to be secure and playing simple terminal games.
   <p>
+  <p>
+  ![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
+  ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+  </p>
 </div>
 
-![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 
 
 ## Getting Started
@@ -117,7 +120,7 @@ or `dot -t hangman`
 
 Use the hangman function to play the original and old-fashion game. Guess the word before you hang.
 
-***
+
 
 <br/>
 
