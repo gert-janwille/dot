@@ -1,6 +1,6 @@
 from pexpect import pxssh
 from dot.common.constants import *
-import dot.env.credentials as credentials
+import dot.settings as credentials
 
 def sshConnect(args):
     try:
