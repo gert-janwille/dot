@@ -10,7 +10,7 @@
 
 
 ![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg) 
+![License](https://img.shields.io/badge/license-GPL-blue.svg)
 
 
 
@@ -184,7 +184,7 @@ See also the list of [contributors](https://github.com/gert-janwille/dot/contrib
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details
+This project is licensed under the GPL License - see the [LICENSE.txt](LICENSE.txt) file for details
 
 ## Acknowledgments
 
